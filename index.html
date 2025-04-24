@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Portfólio</title>
+</head>
+<body>
+    <header class="site-header">
+        <h1 class="site-title">Patrick, o Feiticeiro do Código</h1>
+        <nav class="site-nav">
+            <ul class="nav-list">
+                <li class="nav-item"><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                <li class="nav-item"><a href="#magias" class="nav-link">Feitiços Aprendidos</a></li>
+                <li class="nav-item"><a href="#projetos" class="nav-link">Projetos</a></li>
+                <li class="nav-item"><a href="#contato" class="nav-link">Contato por Coruja</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="site-main">
+        <section id="sobre" class="section sobre">
+            <h2 class="section-title">Quem sou eu?</h2>
+            <div class="sobre-content">
+                <img src="./style/assets/Foto de Patrick.jpg" alt="Foto de Patrick" class="sobre-foto">
+                <div class="sobre-texto">
+                    <p>Me chamo Patrick, tenho 30 anos, e moro em Duque de Caxias – RJ, mas minha mente vive entre linhas de código, galáxias distantes e corredores encantados de castelos mágicos. Atualmente curso Análise e Desenvolvimento de Sistemas, e venho construindo minha jornada como desenvolvedor com dedicação, coragem e uma pitada de feitiçaria.</p>
+                    <p>Como um verdadeiro bruxo da tecnologia, sou movido pelas características das quatro casas de Hogwarts, porque limitar-se a uma só nunca foi minha praia — ou minha torre:</p>
+                    <ul class="house-list">
+                        <li class="house-item gryffindor">🦁 <b>Grifinória</b> me dá a coragem de recomeçar. Largar o antigo mundo e mergulhar no universo do código exige bravura. E cá estou eu, duelando bugs como se fossem Comensais da Lógica.</li>
+                        <li class="house-item slytherin">🐍 <b>Sonserina</b> me ensinou a ser estratégico. Programar não é só escrever comandos — é saber onde colocar cada linha para alcançar o efeito mais poderoso. E se for com um console.log("Avada Kedavra no erro!"), melhor ainda.</li>
+                        <li class="house-item ravenclaw">🦅 <b>Corvinal</b> é minha aliada nos estudos. Devoro documentações como se fossem grimórios e fico genuinamente feliz ao descobrir uma nova funcionalidade do JavaScript — tipo quando você aprende um novo feitiço que resolve tudo.</li>
+                        <li class="house-item hufflepuff">🦡 <b>Lufa-Lufa</b> me mantém firme no trabalho em equipe. Acredito que bom humor e empatia no ambiente de desenvolvimento são tão importantes quanto um código bem indentado.</li>
+                    </ul>
+                    <p>Sou geek, fã de cultura pop, e estudo como se estivesse me preparando para a batalha final de Hogwarts — com disciplina, resiliência e aquele toque de diversão que só um Dev que cresceu entre heróis, vilões e linhas de comando pode entender.</p>
+                    <p>Ainda estou em busca da minha primeira grande missão como desenvolvedor, mas uma coisa eu garanto: quando o chamado vier, estarei pronto — com a varinha em uma mão e o terminal aberto na outra.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="magias" class="section magias">
+            <h2 class="section-title">Magias Aprendidas</h2>
+            <h3 class="section-subtitle">Essas são as artes mágicas que já dominei no meu caminho como desenvolvedor...</h3>
+            <div class="magia-grid">
+                <div class="magia-card">
+                    <img src="./style/assets/HTML5.png" alt="HTML 5" class="magia-icon">
+                    <p class="magia-desc">A fundação encantada onde toda grande jornada digital começa...</p>
+                </div>
+                <div class="magia-card">
+                    <img src="./style/assets/4202020css3htmllogosocialsocialmedia-115668_115633.png" alt="CSS 3" class="magia-icon">
+                    <p class="magia-desc">O encanto que transforma esboços em experiências...</p>
+                </div>
+                <div class="magia-card">
+                    <img src="./style/assets/javascript_icon_130900.png" alt="Javascript" class="magia-icon">
+                    <p class="magia-desc">Minha varinha principal. Dinamiza, conecta, faz o impossível parecer simples...</p>
+                </div>
+                <div class="magia-card">
+                    <img src="./style/assets/react_original_wordmark_logo_icon_146375.png" alt="React" class="magia-icon">
+                    <p class="magia-desc">Meu vira-tempo de performance. Com seus componentes reutilizáveis...</p>
+                </div>
+                <div class="magia-card">
+                    <img src="./style/assets/nextjs_icon_212861.png" alt="Nextjs" class="magia-icon">
+                    <p class="magia-desc">Onde a arte encontra a engenharia. Domina as rotas...</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos" class="section projetos">
+            <h2 class="section-title">Projetos</h2>
+            <!-- Aqui vou adicionar cards de projetos -->
+        </section>
+
+        <section id="contato" class="section contato">
+            <h2 class="section-title">Contato por Coruja</h2>
+            <form action="https://formspree.io/f/mdkgopao" method="post" class="contato-form">
+    
+                <div class="form-group">
+                    <label for="nome">Nome/Empresa:</label>
+                    <input type="text" name="nome" placeholder="Seu nome completo (sem poções de encurtamento)" class="form-input" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" placeholder="Seu endereço de coruja eletrônica (ex: harry@hogwarts.edu)" class="form-input" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="telefone" placeholder="Número de contato (trouxas preferem WhatsApp)" class="form-input">
+                </div>
+            
+                <div class="form-group">
+                    <label for="mensagem">Deixe sua mensagem:</label>
+                    <textarea name="mensagem" placeholder="Deixe sua mensagem — dúvidas, convites para aventuras ou pedidos de magia em código!" class="form-textarea" required></textarea>
+                </div>
+            
+                <div class="form-group">
+                    <button type="submit" class="form-button">Enviar mensagem</button>
+                </div>
+                
+            </form>
+            
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 Patrick, o Dev Bruxo. Todos os direitos reservados — nem mesmo um feitiço de cópia pode burlar isso. 🪄</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,265 @@
+@import url(./font.css);
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Cinzel', 'Serif';
+    font-size: 12px;
+
+    /* Estilo mágico de fundo */
+    background-image: url('https://www.transparenttextures.com/patterns/parchment.png');
+    background-color: #f4f1e0;
+    background-repeat: repeat;
+    color: #2c2c2c;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto 15px auto;
+    text-align: center;
+}
+
+.site-title {
+    font-family: 'Harry P', 'Serif';
+    font-size: 80px;
+    width: 100%;
+    text-align: center;
+    color: #d4af37;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+.site-nav {
+    width: 100%;
+}
+
+.nav-list {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    white-space: nowrap;
+    font-family: 'Cinzel', 'Serif';
+    color: #3c2f2f;
+}
+
+.site-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#sobre,
+#magias,
+#projetos,
+#contato {
+    border: solid 2px black;
+    margin: 15px;
+    width: 50%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+.section-title {
+    font-family: 'Harry P', 'Serif';
+    font-size: 60px;
+    color: #d4af37;
+    text-shadow: 1px 1px 3px black;
+}
+
+.sobre-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sobre-foto {
+    width: 20rem;
+    border-radius: 70%;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.house-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.house-item {
+    margin: 0.5rem;
+}
+
+.magia-grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: 100%;
+    justify-content: center;
+    gap: 30px;
+}
+
+.magia-card {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    max-width: 220px;
+    flex: 1 1 200px;
+    align-items: center;
+    background-color: #fff8e1;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+}
+
+.magia-icon {
+    width: 12rem;
+    margin: 15px;
+}
+
+.contato-form {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-input,
+.form-textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-textarea {
+    height: 150px;
+    resize: none;
+}
+
+.form-button {
+    width: 25%;
+    margin: 0 auto;
+    display: block;
+    background-color: #4b2e83;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: #2c1a4a;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.site-footer {
+    background-color: black;
+    text-align: center;
+    color: azure;
+}
+
+/* Cores temáticas das casas */
+.gryffindor {
+    background-color: #7f0909;
+    color: #f1d302;
+}
+
+.slytherin {
+    background-color: #1a472a;
+    color: #aaaaaa;
+}
+
+.ravenclaw {
+    background-color: #0e1a40;
+    color: #946b2d;
+}
+
+.hufflepuff {
+    background-color: #f0c75e;
+    color: #372e29;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #sobre,
+    #magias,
+    #projetos,
+    #contato,
+    .site-header {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .contato-form {
+        width: 100%;
+    }
+
+    .form-button {
+        width: 100%;
+    }
+
+    .site-title {
+        font-size: 48px;
+    }
+
+    .section-title {
+        font-size: 40px;
+    }
+
+    .magia-icon {
+        width: 8rem;
+    }
+
+    .sobre-foto {
+        width: 12rem;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
